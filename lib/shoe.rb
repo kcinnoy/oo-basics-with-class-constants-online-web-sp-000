@@ -10,7 +10,7 @@ class Shoe
   end
 
   def unique_brand(brand_name)
-    if BRANDS.exclude?(brand_name)
+    unless BRANDS.include?(brand_name)
       BRANDS << brand_name
     end
   end
